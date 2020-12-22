@@ -5,8 +5,7 @@ const forecast = (longitude, latitude, callback) => {
 		"http://api.weatherstack.com/current?access_key=32b15603b49eb06105586598d300891a&query=" +
 		latitude +
 		"," +
-		longitude +
-		"&units=f";
+		longitude;
 
 	const isValidLongitude = isNaN(longitude);
 	const isValidLatitude = isNaN(latitude);
