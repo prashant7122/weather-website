@@ -18,7 +18,7 @@ const forecast = (longitude, latitude, callback) => {
 		} else {
 			callback(
 				undefined,
-				`${response.body.current.weather_descriptions[0]}. It's currently ${response.body.current.temperature} degrees out. It feels like ${response.body.current.feelslike} degrees out.`
+				`${response.body.current.weather_descriptions[0]}. It's currently ${response.body.current.temperature} degrees out. It feels like ${response.body.current.feelslike} degrees out. There is ${response.body.current.precip}% chance of rain. Humidity is ${response.body.current.humidity}%.`
 			);
 		}
 	});
